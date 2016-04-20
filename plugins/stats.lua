@@ -123,11 +123,11 @@ local function bot_stats()
   -- Users
   local hash = 'msgs:*:'..our_id
   local r = redis:eval(redis_scan, 1, hash)
-  local text = 'کاربران: '..r
+  local text = 'users: '..r
 
   hash = 'chat:*:users'
   r = redis:eval(redis_scan, 1, hash)
-  text = text..'\nگروه ها: '..r
+  text = text..'\ngroups: '..r
 
   return text
 
@@ -145,7 +145,7 @@ local function run(msg, matches)
       end
     end
 
-    if matches[2] == "bot" or "telemanager" then
+    if matches[2] == "bot" or "spherobot" then
       if not is_sudo(msg) then
         return "تنها برای سودو مجاز است"
       else
@@ -174,7 +174,7 @@ return {
     "^[!/]([Ss]tats)$",
     "^[!/]([Ss]tats) (chat) (%d+)",
     "^[!/]([Ss]tats) (bot)",
-    "^[!/]([Ss]tats) (telemanager)"
+    "^[!/]([Ss]tats) (spherobot)"
     }, 
   run = run,
   pre_process = pre_process
