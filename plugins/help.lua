@@ -3,8 +3,8 @@ do
 function run(msg, matches)
 
 local mods = [[ 
-راهنما فارسی مدیران :
-@telemanager_ch
+persian help for mods :
+@SpheroCh
 
 !kick [Username | ID | Reply]
 
@@ -45,27 +45,26 @@ local mods = [[
 !plugins [-+] (Plug Name) chat
 
 ==========================
-به علاوه تمامی دستورات رنک :
-member
+you can use commands members
 ==========================
- جهت دریافت راهنمای رنک های دیگر میتوانید از دستورات زیر استفاده کنید :
+for recieve help other rank use :
  
  !help owner 
- راهنمای صاحبان
+owner help
  
  !help mod
-راهنمای مدیران
+moderators help
 
 !help member
-راهنمای اعضای معمولی
+members help
 
  ]]
 
  
  local admin = [[ 
  
- راهنمای فارسی ادمین ها :
- @telemanager_ch
+persian help for admins :
+ @SpheroCh
  
  !banall [Reply | ID | Username]
  
@@ -85,30 +84,30 @@ member
  
  !all [GP-ID]
  ==========================
- به علاوه تمامی دستورات رنک های :
+you can use commands :
  owner
- و
+ and:
  mod
- و
+ and:
  member
 ========================== 
- جهت دریافت راهنمای رنک های دیگر میتوانید از دستورات زیر استفاده کنید :
+for recieve other rank use :
  
  !help owner 
- راهنمای صاحبان
+owners help
  
  !help mod
-راهنمای مدیران
+mods help
 
 !help member
-راهنمای اعضای معمولی
+members help
  
  ]]
  
  local owner = [[
  
- راهنمای فارسی صاحبان گروه :
- @telemanager_ch
+help for owner :
+ @SpheroCh
  
  !promote [Reply | ID | Username]
  
@@ -120,28 +119,28 @@ member
  
  !setrank [Reply | ID | Username]
  ==========================
- به علاوه تمامی دستورات رنک های :
+you can use commands :
  mod
- و
+and:
  member
  ==========================
- جهت دریافت راهنمای رنک های دیگر میتوانید از دستورات زیر استفاده کنید :
+for recieve other rank use :
  
  !help owner 
- راهنمای صاحبان
+owners help
  
  !help mod
-راهنمای مدیران
+mods help
 
 !help member
-راهنمای اعضای معمولی
+members help
  
  ]]
  
  local member = [[
  
- راهنمای فارسی عضو ها :
- @telemanager_ch
+persian help for members :
+ @SpheroCh
  
  !calc [formula]
  
@@ -171,23 +170,23 @@ member
  
  !sticker [TXT]
  ==========================
- جهت دریافت راهنمای رنک های دیگر میتوانید از دستورات زیر استفاده کنید :
+for recieve other rank use :
  
  !help owner 
- راهنمای صاحبان
+owners help
  
  !help mod
-راهنمای مدیران
+mods help
 
 !help member
-راهنمای اعضای معمولی
+members help
  
  ]]
  
  local sudo = [[
  
- راهنما فارسی سودو ها :
- @telemanager_ch
+persian help for sudo :
+ @SpheroCh
  
  !addadmin [ID | Username]
  
@@ -212,18 +211,18 @@ member
  !reload
  
  ==========================
- به علاوه دسترسی به تمامی دستورات رنک های دیگر
++ and sudo use all rank commands
  ==========================
- جهت دریافت راهنمای رنک های دیگر میتوانید از دستورات زیر استفاده کنید :
+for recieve other rank use :
  
  !help owner 
- راهنمای صاحبان
+owners help
  
  !help mod
-راهنمای مدیران
+mods help
 
 !help member
-راهنمای اعضای معمولی
+members help
  ]]
  
  if msg.to.type == 'chat' and matches[1]:lower() == 'help' and matches[2] == nil then 
