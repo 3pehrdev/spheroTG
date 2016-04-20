@@ -249,8 +249,7 @@ local lock_video = "no"
 local gp_type = data[tostring(msg.to.id)]['group_type']
         
          local settings = data[tostring(target)]['settings']
-	  local text = "⚙Group settings⚙\n====================\nLock group name : "..settings.lock_name.."\n➖➖➖➖\nLock group photo : "..settings.lock_photo.."\n➖➖➖➖\nLock group tag : "..lock_tag.."\n➖➖➖➖\nLock group persian : "..lock_arabic.."\n➖➖➖➖\nLock group chating : "..lock_chat.."\n➖➖➖➖\nLock group member : "..settings.lock_member.."\n➖➖➖➖\nLock group english  "..lock_eng.."\n➖➖➖➖\n Lock group leave : "..lock_leave.."\n➖➖➖➖\nLock group bad words : "..lock_badw.."\n➖➖➖➖\nLock group ads : "..lock_link.."\n➖➖➖➖\nsticker status : "..lock_sticker.."\n➖➖➖➖\nflood sensitivity : "..NUM_MSG_MAX.."\n➖➖➖➖\nBot protection : "..bots_protection.. "\n➖➖➖➖\n Group Type : "..gp_type.."\n➖➖➖➖\n BotVersion : 3.0.0"..tmp
-  if is_realm(msg) then
+	  local text = "🔍Group settings:\nVersion : 2.2 beta \n🔑Lock group name : "..settings.lock_name.."\n🔑Lock group photo : "..settings.lock_photo.."🔑\nLock group tag : "..lock_tag.."\n🔑Lock group persian : "..lock_arabic.."\n🔑Lock group chat : "..lock_chat.."\n🔑Lock group member : "..settings.lock_member.."🔑\nLock group english  "..lock_eng.."\n🔑Lock group leave : "..lock_leave.."\n🔑Lock badwords : "..lock_badw.."\n🔑Lock group ads : "..lock_link.."\n🔑sticker policy : "..lock_sticker.."\n🔑flood sensitivity : "..NUM_MSG_MAX.."\n🔑Lock group Bot  : "..bots_protection.. "\n🔑Group Type : "..gp_type.."\nDeveloped by @joker_admin_1  if is_realm(msg) then
   return text
   else
   return text
