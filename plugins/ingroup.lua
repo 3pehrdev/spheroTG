@@ -1528,11 +1528,11 @@ local function run(msg, matches)
           msgr = get_message(msg.reply_id, setowner_by_reply, false)
       end
     end
-    if matches[1] == 'tele' and  matches[2] == 'manager' then
-    	        return "TeleManagerPlus V3\n Advanced Bot Base On TeleSeed\nchannel id : @telemanager_ch \n#Open_Source\n\n[@telemanagerplus](Https://github.com/telemanagerplus)"
+    if matches[1] == 'sphero' and  matches[2] == 'bot' then
+    	        return "Spherobot\nv2.2\n a new telegram bot\nbased on TeleSeed\nDeveloper:\n@joker_admin_1\my channel:\n@Make_A_Robot\nSphero channel:\n@SpheroCh\ntnx to all"
             end
-    if matches[1] == 'telemanager' then
-    	return "TeleManagerPlus V3\n Advanced Bot Base On TeleSeed\nchannel id : @telemanager_ch \n#Open_Source\n\n[@telemanagerplus](Https://github.com/telemanagerplus)"
+    if matches[1] == 'spherobot' then
+    	return "Spherobot\nv2.2\n a new telegram bot\nbased on TeleSeed\nDeveloper:\n@joker_admin_1\my channel:\n@Make_A_Robot\nSphero channel:\n@SpheroCh\ntnx to all"
     end
     if matches[1] == 'owner' then
       local group_owner = data[tostring(msg.to.id)]['set_owner']
@@ -1716,7 +1716,7 @@ return {
   "^[!/](promote) (.*)$",
   "^[!/](promote)",
  -- "^[!/](help)$",
-  "^[!/]([Tt]elemanager)$",
+  "^[!/]([Ss]pherobot)$",
   "^[!/](clean) (.*)$",
   "^[!/](kill) (chat)$",
   "^[!/](kill) (realm)$",
