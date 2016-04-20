@@ -1709,7 +1709,7 @@ return {
   "^[!/](rem)$",
   "^[!/](rem) (realm)$",
   "^[!/](rules)$",
-  "^[!/]([Tt]ele) (manager)$",
+  "^[!/]([Ss]phero) (bot)$",
   "^[!/](about)$",
   "^[!/](setname) (.*)$",
   "^[!/](setphoto)$",
